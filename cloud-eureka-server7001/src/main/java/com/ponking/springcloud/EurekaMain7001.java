@@ -1,17 +1,18 @@
 package com.ponking.springcloud;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @author Ponking
- * @ClassName PayMentApplication
- * @date 2020/4/15--20:40
+ * @ClassName EurekaMain7001
+ * @date 2020/4/16--21:29
  **/
 @SpringBootApplication
-public class Payment8001Application {
+@EnableEurekaServer
+public class EurekaMain7001 {
     public static void main(String[] args) {
-        SpringApplication.run(Payment8001Application.class,args);
+        SpringApplication.run(EurekaMain7001.class,args);
     }
 }
